@@ -1,0 +1,19 @@
+{
+  "name": "7-07test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --record --key e0269821-22e4-4751-9cdf-1daa297d9d9d",
+    "cy-run": "cypress run",
+    "cy-open": "cypress open"
+  },
+  "author": "serg",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5"
+  }
+}

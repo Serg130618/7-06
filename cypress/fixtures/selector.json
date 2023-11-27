@@ -1,0 +1,26 @@
+[
+  {
+    "loginButton": ".login__button"
+  },
+  {
+    "login": "[for='email'] > .login__input"
+  },
+  {
+    "pass": "[for='pwd'] > .login__input"
+  },
+  {
+    "title": ".page-header__title"
+  },
+  {
+    "week": ".page-nav__day-week"
+  },
+  {
+    "day": ".page-nav__day-number"
+  },
+  {
+    "allday": ".page-nav__day"
+  },
+  {
+    "today": ".page-nav__day_today"
+  }
+]
