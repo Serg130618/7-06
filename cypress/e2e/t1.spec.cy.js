@@ -20,4 +20,11 @@ describe("SiteVisible", () => {
       cy.get(selector[6].allday).should("have.length", 7);
     });
   });
+  it("Should be films", () => {
+    cy.fixture("selector.json").then((selector) => {
+      cy.get(selector[7].today).click();
+      cy.get(selector[8].zver1).should("have.text", "Зверополис");
+      //cy.get(selector[9].wind).should("have.text", "Унесенные ветром");
+    });
+  });
 });

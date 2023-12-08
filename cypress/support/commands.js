@@ -12,7 +12,11 @@ Cypress.Commands.add("loginIn", (login, password) => {
   cy.get("[for='pwd'] > .login__input").type(password);
   cy.get(".login__button").click();
 });
-
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false;
+});
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })

@@ -22,5 +22,15 @@
   },
   {
     "today": ".page-nav__day_today"
+  },
+
+  {
+    "zver1": ":nth-child(1) > .movie__info > .movie__description > .movie__title"
+  },
+  {
+    "zver2": ":nth-child(1) > .movie__info > .movie__description > .movie__synopsis"
+  },
+  {
+    "time": ":nth-child(3) > .movie-seances__hall > .movie-seances__list > .movie-seances__time-block > .movie-seances__time"
   }
 ]

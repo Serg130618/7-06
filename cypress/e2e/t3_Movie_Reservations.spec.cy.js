@@ -25,5 +25,15 @@ describe("BookTicket", () => {
     cy.get("#start-sales > .text-center > .conf-step__button").click();
 
     cy.visit("http://qamid.tmweb.ru");
+    cy.contains("Зал 1").should("be.visible");
+    cy.get(".page-nav__day_today").first().click();
+    cy.get(":nth-child(3) > .movie-seances__time").click();
+
+    cy.get(":nth-child(5) > :nth-child(9)").click();
+    cy.contains("Забронировать").click();
+    cy.contains("Получить код бронирования").click();
+    cy.contains(
+      "Покажите QR-код нашему контроллеру для подтверждения бронирования"
+    ).should("be.visible");
   });
 });
